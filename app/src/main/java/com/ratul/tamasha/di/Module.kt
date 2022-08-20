@@ -1,7 +1,7 @@
 package com.ratul.tamasha.di
 
 import com.ratul.tamasha.data.EmployeeService
-import com.ratul.tamasha.utils.NetworkConnectionInterceptor
+import com.ratul.tamasha.utils.network.NetworkConnectionInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

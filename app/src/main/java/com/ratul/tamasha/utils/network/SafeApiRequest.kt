@@ -1,5 +1,6 @@
-package com.ratul.tamasha.utils
+package com.ratul.tamasha.utils.network
 
+import com.ratul.tamasha.utils.Exceptions
 import retrofit2.Response
 
 abstract class SafeApiRequest {

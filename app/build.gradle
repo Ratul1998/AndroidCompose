@@ -95,5 +95,6 @@ dependencies {
     kapt "com.google.dagger:hilt-compiler:2.42"
 
     implementation "androidx.preference:preference-ktx:1.2.0"
+    implementation "com.github.skydoves:landscapist-glide:1.6.1"
 
 }

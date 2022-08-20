@@ -14,7 +14,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.ratul.tamasha.components.EmployeeCard
 import com.ratul.tamasha.data.Employee
@@ -36,14 +35,13 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             TamashaTheme {
-                // A surface container using the 'background' color from the theme
                 Scaffold(
                     backgroundColor = Color.White,
                     topBar = {
                         TopAppBar(
-                            backgroundColor = Color.Black,
+                            backgroundColor = MaterialTheme.colors.primary,
                             title = {
-                                Text(text = "Employees", style = TextStyle(color = Color.White, fontSize = 16.sp, fontWeight = FontWeight.W600))
+                                Text(text = "Employees", style = MaterialTheme.typography.h1)
                             },
                         )
                     },
@@ -70,7 +68,7 @@ class MainActivity : ComponentActivity() {
 
                         is EmployeeState.ErrorState-> {
                             Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize()) {
-                                Text((currentState as EmployeeState.ErrorState).message, style = TextStyle(color = Color.Red, fontSize = 16.sp))
+                                Text((currentState as EmployeeState.ErrorState).message, style = MaterialTheme.typography.body2.copy(color = Color.Red))
                             }
                         }
                     }

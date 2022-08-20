@@ -1,9 +1,9 @@
-package com.ratul.tamasha.utils
+package com.ratul.tamasha.utils.network
 
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
-import android.util.Log
+import com.ratul.tamasha.utils.Exceptions
 import dagger.hilt.android.qualifiers.ApplicationContext
 import okhttp3.Interceptor
 import okhttp3.Response

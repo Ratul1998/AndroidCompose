@@ -24,7 +24,7 @@ class EmployeeViewModel @Inject constructor(private val employeeRepository: Empl
 
     fun getEmployees(){
 
-        viewModelScope.launch(Dispatchers.Main + exceptionHandler) {
+        viewModelScope.launch(Dispatchers.IO + exceptionHandler) {
 
             employeeState.tryEmit(EmployeeState.LoadingState)
 

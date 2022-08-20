@@ -1,6 +1,6 @@
 package com.ratul.tamasha.data
 
-import com.ratul.tamasha.utils.NetworkConnectionInterceptor
+import com.ratul.tamasha.utils.network.NetworkConnectionInterceptor
 import okhttp3.OkHttpClient
 import retrofit2.Response
 import retrofit2.Retrofit
